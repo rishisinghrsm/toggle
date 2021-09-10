@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help | Pixel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="container_1">
+        <div class="div">
+        <button type="button" class="btn" id="login" onclick="login()"> LOG IN</button>
+        <button type="button" class="btn"  id="register" onclick="register()"> REGISTER</button>
+    </div>
+    <span>
+
+        <form action="POST" class="form">
+            <input type="text" placeholder="Name" class="input" required>
+            <input type="password" placeholder="Password" class="input" required>
+            <input type="tel" placeholder="Phone No" class="input" required>
+            <br>
+            <input type="checkbox" class="redio"><span >Remaimber Password</span>
+            <br>
+            <button type="submit" class="log" >LOG IN</button>
+        </form>
+    </span>
+
+        <form action="POST" class="form2">
+            <input type="text" placeholder="Name" class="input1" required>
+            <input type="password" placeholder="Password" class="input1" required>
+            <input type="tel" placeholder="Phone No" class="input1" required>
+            <input type="email" placeholder="Email ID" class="input1" required>
+            <br>
+            <input type="checkbox" class="redio" id="redio" required><label for="redio"> Terms & Conditions</label>
+            <br>
+            <button type="submit" class="log" href="login.html">REGISTER</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+<script>
+    let x =document.getElementsByClassName('form')[0];
+    let y =document.getElementsByClassName('form2')[0];
+    let z =document.getElementById('register');
+    let w =document.getElementById('login');
+    let r =document.getElementsByClassName('container_1');
+    let e = document.getElementsByClassName('log')[0];
+    let input = document.getElementsByClassName('input');
+    function register(){
+        x.style.display = "none";
+        y.style.display = "inline"
+        w.style.backgroundColor = "transparent"
+        w.style.color ="indianred"
+        z.style.color = "white"
+           z.style.backgroundColor ="tomato"
+        
+    //    r.style.height = "500px"
+        console.log("bye");
+    };
+    function login(){
+        y.style.display ="none";
+            x.style.display = "inline"
+            w.style.backgroundColor = "tomato"
+            w.style.color ="white"
+        z.style.color = "indianred"
+           z.style.backgroundColor ="transparent"
+            // r.style.height = "340px"   
+             
+        console.log("hello");
+    };
+function loginbtn() {
+    document.write("THANK YOU FOR YOUR FEEDBACK.")
+}
+    
+    
+
+
+</script>
+</html>
